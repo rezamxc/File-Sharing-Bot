@@ -10,31 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6975501300:AAGlZNbCsHQGj47poHK5g3EsEAhZWLdDOXo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7542837671:AAF6xm9UtRMQgp5rIZJI9PEfMOcyA5llGDE")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "20257749"))
+APP_ID = int(os.environ.get("APP_ID", "26614080"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "616180befe2fcc1614cb3b5b5545957d")
+API_HASH = os.environ.get("API_HASH", "7d2c9a5628814e1430b30a1f0dc0165b")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001814615517"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002449948472"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5512817683"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5606990991"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
-SHORTLINK_API = os.environ.get("OWNER_ID", "5512817683")
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sachcs117:12345678r@cluster0.ucs28uw.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "sachsc117")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nsdh77ygz5:b0zdFJkd9frHADgT@cluster0.vvof2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002067433051"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002234503606"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -42,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5512817683").split()):
+    for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
