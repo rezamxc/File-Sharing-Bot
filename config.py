@@ -28,7 +28,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "581853730"))
 PORT = os.environ.get("PORT", "8073")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://rezamxc:4eLv6DGsLNoq3vSK@cluster0.fsm6y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://rezamxc:4eLv6DGsLNoq3vSK@cluster0.fsm6y.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
@@ -58,6 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
+
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
